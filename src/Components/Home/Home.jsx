@@ -21,6 +21,9 @@ import numPhoto5 from '../../assets/group (2) 6.png'
 import numPhoto6 from '../../assets/group (2) 5.png'
 import rectangle from '../../assets/Rectangle 113.png'
 import building from '../../assets/building.png'
+import bg1 from '../../assets/Group.png'
+import bg2 from '../../assets/Group (1).png'
+import bg3 from '../../assets/Clip path group.png'
 
 function Home() {
   return (
@@ -96,8 +99,11 @@ function Home() {
 
       {/* ليه تختار ؟ */}
 
-      <section className="mt-24 pt-5">
-        <div class=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
+      <section className="mt-24 pt-5 relative">
+        <img className='absolute top-0 end-0 hidden md:block' src={bg1} alt="" />
+        <img className='absolute top-1/2 start-0 -translate-y-1/2  hidden md:block' src={bg2} alt="" />
+
+        <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
           <div className='col-span-2 pt-20 choose flex flex-col items-center rounded-t-3xl lg:rounded-r-3xl'>
             <div className="">
               <h3 className='text-6xl font-bold '>ليه تختار ؟</h3>
@@ -142,7 +148,9 @@ function Home() {
 
       {/* إيه اللي بيميزنا عن غيرنا؟ */}
 
-      <section className="my-16 pt-5">
+      <section className="my-16 pt-5 relative">
+        <img className='absolute top-1/2 end-0 -translate-y-1/2 hidden md:block ' src={bg2} alt="" />
+
         <div class=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
           <div className="col-span-3  py-5 px-16 rounded-t-3xl lg:rounded-r-3xl bg-[#141414]">
             <div className="grid grid-rows-3 gap-6">
@@ -188,7 +196,9 @@ function Home() {
 
       {/* إزاي بنساعدك تحقق أهدافك؟ */}
 
-      <section className="mb-5 pt-5">
+      <section className="mb-5 pt-5 relative">
+        <img className='absolute top-1/2  start-0 -translate-y-1/2  hidden md:block' src={bg2} alt="" />
+
         <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
           <div className='col-span-2 pt-16 help flex flex-col items-center rounded-t-3xl lg:rounded-r-3xl'>
             <div className="px-10">
@@ -233,50 +243,53 @@ function Home() {
 
       {/* ارقــامــنــا */}
 
-      <section className='w-10/12 mx-auto my-10  py-10'>
-        <div className="header text-center my-8 py-8 relative">
-          <h2 className="font-extrabold text-5xl text-white relative inline-block">
-            ارقــامــنــا
-            <img
-              className="absolute -top-14 left-[-6%] transform -translate-x-1/2  "
-              src={numPhoto}
-              alt="Logo Icon"
-            />
-          </h2>
-        </div>
-        <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
-            <img className='w-1/3 my-4' src={numPhoto6} alt="" />
-            <h2 className='font-bold text-2xl'>10,000+</h2>
-            <p className='my-3'>عميل راضٍ عن خدمتنا</p>
+      <section className=' my-10  py-10 relative'>
+        <img className='absolute top-0 end-0   hidden md:block' src={bg3} alt="" />
+        <div className="w-10/12 mx-auto">
+          <div className="header text-center my-8 py-8 relative">
+            <h2 className="font-extrabold text-5xl text-white relative inline-block">
+              ارقــامــنــا
+              <img
+                className="absolute -top-14 left-[-6%] transform -translate-x-1/2  "
+                src={numPhoto}
+                alt="Logo Icon"
+              />
+            </h2>
           </div>
-          <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
-            <img className='w-1/3 my-4' src={numPhoto5} alt="" />
-            <h2 className='font-bold text-2xl'>+5,000</h2>
-            <p className='my-3'>تقرير تحليل دقيق </p>
-          </div>
-          <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
-            <img className='w-1/3 my-4' src={numPhoto4} alt="" />
-            <h2 className='font-bold text-2xl'>+500</h2>
-            <p className='my-3'>تقييم إيجابي من عملائنا</p>
-          </div>
-          <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
-            <img className='w-1/3 my-4' src={numPhoto3} alt="" />
-            <h2 className='font-bold text-2xl'>24/7</h2>
-            <p className='my-3'>دعم متواصل</p>
-          </div>
-          <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
-            <img className='w-1/3 my-4' src={numPhoto2} alt="" />
-            <h2 className='font-bold text-2xl'>95%</h2>
-            <p className='my-3'>نسبة رضا العملاء</p>
-          </div>
-          <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
-            <img className='w-1/3 my-4' src={numPhoto1} alt="" />
-            <h2 className='font-bold text-2xl'>+1,000</h2>
-            <p className='my-3'>سيارة تم فحصها</p>
-          </div>
+          <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+              <img className='w-1/3 my-4' src={numPhoto6} alt="" />
+              <h2 className='font-bold text-2xl'>10,000+</h2>
+              <p className='my-3'>عميل راضٍ عن خدمتنا</p>
+            </div>
+            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+              <img className='w-1/3 my-4' src={numPhoto5} alt="" />
+              <h2 className='font-bold text-2xl'>+5,000</h2>
+              <p className='my-3'>تقرير تحليل دقيق </p>
+            </div>
+            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+              <img className='w-1/3 my-4' src={numPhoto4} alt="" />
+              <h2 className='font-bold text-2xl'>+500</h2>
+              <p className='my-3'>تقييم إيجابي من عملائنا</p>
+            </div>
+            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+              <img className='w-1/3 my-4' src={numPhoto3} alt="" />
+              <h2 className='font-bold text-2xl'>24/7</h2>
+              <p className='my-3'>دعم متواصل</p>
+            </div>
+            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+              <img className='w-1/3 my-4' src={numPhoto2} alt="" />
+              <h2 className='font-bold text-2xl'>95%</h2>
+              <p className='my-3'>نسبة رضا العملاء</p>
+            </div>
+            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+              <img className='w-1/3 my-4' src={numPhoto1} alt="" />
+              <h2 className='font-bold text-2xl'>+1,000</h2>
+              <p className='my-3'>سيارة تم فحصها</p>
+            </div>
 
 
+          </div>
         </div>
 
       </section>
