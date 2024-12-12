@@ -55,3 +55,26 @@ body {
   background-color:#0454F2 ;
   @apply bg-cover-center;
 }
+
+
+/* Wrapper around all dots */
+.slick-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* Default dot styling */
+.slick-dots li button::before {
+  font-size: 20px !important;
+  color: #ccc !important;
+  opacity: 1 !important;
+}
+
+/* Active dot styling */
+.slick-dots li.slick-active button::before {
+  color: var(--mainColor) !important; 
+  font-size: 25px !important;
+  width: 8px !important;
+}

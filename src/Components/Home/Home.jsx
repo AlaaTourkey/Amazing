@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/auto-vehicle-repair-service-logo_681672-1437 1.png'
 import carimg from '../../assets/land-rover-range-rover-car-png-25 1.png'
 import chooseImg1 from '../../assets/note.png'
@@ -26,23 +26,10 @@ import bg2 from '../../assets/Group (1).png'
 import bg3 from '../../assets/Clip path group.png'
 
 function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      {/* nav in home */}
-      <div className="nav w-4/5 mx-auto my-10">
-        <div className=" flex justify-between items-center px-5 py-3   border border-[#7F7F7F] rounded-full	">
-          <div className="flex justify-between items-center">
-            <img src={logo} alt="logo" />
-
-            <h2 className=" md:text-2xl mx-4">
-              <strong className=" ">كـــــار</strong> سيرفيس
-            </h2>
-          </div>
-          <div className=" border-2 border-white  px-2 py-1 rounded-lg  ">
-            <span>English</span>
-          </div>
-        </div>
-      </div>
 
       {/* home */}
 
@@ -243,7 +230,7 @@ function Home() {
 
       {/* ارقــامــنــا */}
 
-      <section className=' my-10  py-10 relative'>
+      <section className=' my-10  py-10 relative '>
         <img className='absolute top-0 end-0   hidden md:block' src={bg3} alt="" />
         <div className="w-10/12 mx-auto">
           <div className="header text-center my-8 py-8 relative">
@@ -338,6 +325,10 @@ function Home() {
           </div>
         </div>
       </section>
+
+
+
+
     </>
   )
 }
