@@ -37,6 +37,9 @@ function Navbar() {
           <Link to="/info" className="hover:text-orange-500">
             معلومات عنا
           </Link>
+          <Link to="/report" className="hover:text-orange-500">
+            التقرير
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-4">

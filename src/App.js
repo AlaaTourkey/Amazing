@@ -9,6 +9,7 @@ import Articles from './Components/Articles/Articles';
 import Info from './Components/Info/Info';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
+import Report from './Components/Report/Report';
 
 
 let routes = createBrowserRouter([
@@ -20,6 +21,7 @@ let routes = createBrowserRouter([
       { path: 'gallery', element: <Gallery /> },
       { path: 'Questions', element: <Questions /> },
       { path: 'articles', element: <Articles /> },
+      { path: 'report', element: <Report /> },
       { path: 'info', element: <Info /> },
       { path: 'register', element: <Register /> },
       { path: 'login', element: <Login /> },

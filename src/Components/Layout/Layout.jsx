@@ -10,9 +10,7 @@ function Layout() {
       <div className="mb-20 mt-28">
         <Outlet />
       </div>
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </>
   )
 }
