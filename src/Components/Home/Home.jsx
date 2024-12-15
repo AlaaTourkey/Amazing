@@ -24,15 +24,33 @@ import building from '../../assets/building.png'
 import bg1 from '../../assets/Group.png'
 import bg2 from '../../assets/Group (1).png'
 import bg3 from '../../assets/Clip path group.png'
-
+import article from '../../assets/Group 46.png'
+import article1 from '../../assets/article1.png'
+import article2 from '../../assets/article2.png'
+import article3 from '../../assets/article3.png'
+import say from '../../assets/say.png'
+import say2 from '../../assets/say2.png'
+import car from '../../assets/car.png'
+import { GoArrowUpRight } from 'react-icons/go'
+import Slider from 'react-slick/lib/slider'
+import { TbMessageHeart } from 'react-icons/tb'
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
+
+  var settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+  };
 
   return (
     <>
 
       {/* home */}
-
 
       <section className="home flex justify-center py-3  md:py-10  ">
         <div className=" text-3xl md:text-5xl  text-center ">
@@ -326,9 +344,119 @@ function Home() {
         </div>
       </section>
 
+      {/* المقالات */}
+
+      <section className="w-10/12 mx-auto my-10  py-10">
+        <div >
+          <div className="header my-8 py-8 flex justify-between px-4">
+            <h2 className="font-bold text-3xl md:text-5xl text-white inline-block relative">
+              المقالات
+              <img
+                className="absolute -top-4 left-[-13%] transform -translate-x-1/2  "
+                src={article}
+                alt="Logo Icon"
+              />
+            </h2>
+            <button className='text-[#98989A] text-lg'>عرض الكل ...</button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="col">
+              <div>
+                <img className='w-full' src={article3} alt="" />
+                <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
+                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                  <span>اقراء المزيد</span>
+                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                </button>
+              </div>
+            </div>
+            <div className="col">
+              <div>
+                <img className='w-full' src={article2} alt="" />
+                <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
+                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                  <span>اقراء المزيد</span>
+                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                </button>
+              </div>
+            </div>
+            <div className="col">
+              <div>
+                <img className='w-full' src={article1} alt="" />
+                <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
+                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                  <span>اقراء المزيد</span>
+                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* عملائنا قالو عننا ايه ؟ */}
+
+      <section className='say w-10/12 mx-auto my-16  py-10 relative'>
+        <div className="header my-8 py-8 flex justify-between px-4">
+          <h2 className="font-bold text-3xl md:text-5xl text-white inline-block relative">
+            عملائنا قالو عننا ايه ؟
+            <img
+              className="absolute -top-7 left-[-3%] transform -translate-x-1/2  "
+              src={say}
+              alt="Logo Icon"
+            />
+          </h2>
+        </div>
+
+        <Slider {...settings2}>
+          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border border-[#7F7F7F] rounded-3xl ">
+            <p className='text-lg md:text-3xl font-semibold md:leading-relaxed '>ما شاء الله تبارك الله، خدمة الفحص عندكم أكثر من رائعة. السيارة تم فحصها بشكل دقيق جداً وكل صغيرة وكبيرة تم شرحها لي بالتفصيل. الصراحة ارتحت مرة بعد التقرير اللي استلمته، وحسيت إني فاهم حالة السيارة بالكامل قبل ما أشتريها. الله يبارك فيكم ويزيدكم من فضله</p>
+            <div className=" flex items-center justify-end gap-4 mt-8 text-end">
+              <img src={say2} alt="profile image" />
+              <h2 className='text-base font-bold'>مصطفي الحسيني</h2>
+            </div>
+          </div>
+          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border border-[#7F7F7F] rounded-3xl ">
+            <p className='text-lg md:text-3xl font-semibold md:leading-relaxed '>ما شاء الله تبارك الله، خدمة الفحص عندكم أكثر من رائعة. السيارة تم فحصها بشكل دقيق جداً وكل صغيرة وكبيرة تم شرحها لي بالتفصيل. الصراحة ارتحت مرة بعد التقرير اللي استلمته، وحسيت إني فاهم حالة السيارة بالكامل قبل ما أشتريها. الله يبارك فيكم ويزيدكم من فضله</p>
+            <div className=" flex items-center justify-end gap-4 mt-8 text-end">
+              <img src={say2} alt="profile image" />
+              <h2 className='text-base font-bold'>مصطفي الحسيني</h2>
+            </div>
+          </div>
+          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border border-[#7F7F7F] rounded-3xl ">
+            <p className='text-lg md:text-3xl font-semibold md:leading-relaxed '>ما شاء الله تبارك الله، خدمة الفحص عندكم أكثر من رائعة. السيارة تم فحصها بشكل دقيق جداً وكل صغيرة وكبيرة تم شرحها لي بالتفصيل. الصراحة ارتحت مرة بعد التقرير اللي استلمته، وحسيت إني فاهم حالة السيارة بالكامل قبل ما أشتريها. الله يبارك فيكم ويزيدكم من فضله</p>
+            <div className=" flex items-center justify-end gap-4 mt-8 text-end">
+              <img src={say2} alt="profile image" />
+              <h2 className='text-base font-bold'>مصطفي الحسيني</h2>
+            </div>
+          </div>
 
 
+        </Slider>
 
+      </section>
+
+
+      {/* اشترك الان  */}
+      <section className='w-10/12 mx-auto mb-10  py-10'>
+        <div className="container  ">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-8  border border-[#7F7F7F] rounded-3xl p-4">
+            <div className="col-6 mb-8 mx-8">
+              <h2 className='my-8 text-2xl md:text-5xl font-semibold max-w-sm leading-10'>اشترك الان في  القائمه البريديه</h2>
+
+              <div className=" flex  justify-between p-2 border border-white rounded-xl">
+                <input className='px-1 w-1/3 text-white bg-transparent outline-none' type="text" placeholder="بريدك" />
+                <span className='flex items-center gap-2 bg-[#ff8f4e] rounded-xl py-3 px-4 cursor-pointer '>  <TbMessageHeart className='fs-3xl' />  اشترك الان </span>
+              </div>
+            </div>
+            <div className="col-6 flex justify-center">
+              <img src={car} alt="" className='w-full object-contain -mt-16' />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
