@@ -63,32 +63,32 @@ function About() {
             </h2>
           </div>
           <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto6} alt="" />
               <h2 className='font-bold text-2xl'>10,000+</h2>
               <p className='my-3'>عميل راضٍ عن خدمتنا</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto5} alt="" />
               <h2 className='font-bold text-2xl'>+5,000</h2>
               <p className='my-3'>تقرير تحليل دقيق </p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto4} alt="" />
               <h2 className='font-bold text-2xl'>+500</h2>
               <p className='my-3'>تقييم إيجابي من عملائنا</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto3} alt="" />
               <h2 className='font-bold text-2xl'>24/7</h2>
               <p className='my-3'>دعم متواصل</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto2} alt="" />
               <h2 className='font-bold text-2xl'>95%</h2>
               <p className='my-3'>نسبة رضا العملاء</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto1} alt="" />
               <h2 className='font-bold text-2xl'>+1,000</h2>
               <p className='my-3'>سيارة تم فحصها</p>

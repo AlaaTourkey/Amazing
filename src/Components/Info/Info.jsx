@@ -75,9 +75,9 @@ function Info() {
               <div>
                 <img className='w-full' src={article3} alt="" />
                 <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
-                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                <button className='text-white secondBg flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
                   <span>اقراء المزيد</span>
-                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                  <GoArrowUpRight className='mainColor' />
                 </button>
               </div>
             </div>
@@ -85,9 +85,9 @@ function Info() {
               <div>
                 <img className='w-full' src={article2} alt="" />
                 <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
-                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                <button className='text-white secondBg flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
                   <span>اقراء المزيد</span>
-                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                  <GoArrowUpRight className='mainColor' />
                 </button>
               </div>
             </div>
@@ -95,9 +95,9 @@ function Info() {
               <div>
                 <img className='w-full' src={article1} alt="" />
                 <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
-                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                <button className='text-white secondBg flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
                   <span>اقراء المزيد</span>
-                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                  <GoArrowUpRight className='mainColor' />
                 </button>
               </div>
             </div>

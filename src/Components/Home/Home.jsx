@@ -108,7 +108,7 @@ function Home() {
         <img className='absolute top-0 end-0 hidden md:block' src={bg1} alt="" />
         <img className='absolute top-1/2 start-0 -translate-y-1/2  hidden md:block' src={bg2} alt="" />
 
-        <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
+        <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 mainBorder rounded-3xl">
           <div className='col-span-2 pt-20 choose flex flex-col items-center rounded-t-3xl lg:rounded-r-3xl'>
             <div className="">
               <h3 className='text-6xl font-bold '>ليه تختار ؟</h3>
@@ -116,7 +116,7 @@ function Home() {
             </div>
             <img className='w-1/2 mt-5' src={carimg} alt=" car photo" />
           </div>
-          <div className="col-span-3  p-10 rounded-b-3xl lg:rounded-l-3xl  bg-[#141414]">
+          <div className="col-span-3  p-10 rounded-b-3xl lg:rounded-l-3xl  secondBg">
             <div className="grid grid-rows-3 gap-6">
               <div className=" p-4  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg1} alt="Feature Icon" />
@@ -156,8 +156,8 @@ function Home() {
       <section className="my-16 pt-5 relative">
         <img className='absolute top-1/2 end-0 -translate-y-1/2 hidden md:block ' src={bg2} alt="" />
 
-        <div class=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
-          <div className="col-span-3  py-5 px-16 rounded-t-3xl lg:rounded-r-3xl bg-[#141414]">
+        <div class=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 mainBorder rounded-3xl">
+          <div className="col-span-3  py-5 px-16 rounded-t-3xl lg:rounded-r-3xl secondBg">
             <div className="grid grid-rows-3 gap-6">
               <div className=" p-2  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg4} alt="Feature Icon" />
@@ -204,14 +204,14 @@ function Home() {
       <section className="mb-5 pt-5 relative">
         <img className='absolute top-1/2  start-0 -translate-y-1/2  hidden md:block' src={bg2} alt="" />
 
-        <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 border-[#7F7F7F] rounded-3xl">
+        <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 mainBorder rounded-3xl">
           <div className='col-span-2 pt-16 help flex flex-col items-center rounded-t-3xl lg:rounded-r-3xl'>
             <div className="px-10">
               <h3 className='text-3xl font-bold '>إزاي بنساعدك تحقق أهدافك؟</h3>
             </div>
             <img className='w-3/4 mt-16' src={carimg3} alt=" car photo" />
           </div>
-          <div className="col-span-3  py-5 px-8 rounded-b-3xl lg:rounded-l-3xl bg-[#141414]">
+          <div className="col-span-3  py-5 px-8 rounded-b-3xl lg:rounded-l-3xl secondBg">
             <div className="grid grid-rows-3 gap-6">
               <div className=" p-4  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg7} alt="Feature Icon" />
@@ -262,32 +262,32 @@ function Home() {
             </h2>
           </div>
           <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto6} alt="" />
               <h2 className='font-bold text-2xl'>10,000+</h2>
               <p className='my-3'>عميل راضٍ عن خدمتنا</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto5} alt="" />
               <h2 className='font-bold text-2xl'>+5,000</h2>
               <p className='my-3'>تقرير تحليل دقيق </p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto4} alt="" />
               <h2 className='font-bold text-2xl'>+500</h2>
               <p className='my-3'>تقييم إيجابي من عملائنا</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto3} alt="" />
               <h2 className='font-bold text-2xl'>24/7</h2>
               <p className='my-3'>دعم متواصل</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto2} alt="" />
               <h2 className='font-bold text-2xl'>95%</h2>
               <p className='my-3'>نسبة رضا العملاء</p>
             </div>
-            <div className="bg-[#141414] flex flex-col items-center text-center border border-[#7F7F7F] rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto1} alt="" />
               <h2 className='font-bold text-2xl'>+1,000</h2>
               <p className='my-3'>سيارة تم فحصها</p>
@@ -310,19 +310,19 @@ function Home() {
 
         <div className="grid grid-cols-1  lg:grid-cols-9 gap-4">
           <div className="col-span-2 flex flex-col items-center gap-8">
-            <button className="bg-[#141414] hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border border-[#7F7F7F] rounded-tl-lg rounded-br-lg  text-xl">
+            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
               <img className='mx-1' src={building} alt="" />
               المقطم
             </button>
-            <button className="bg-[#141414] hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border border-[#7F7F7F] rounded-tl-lg rounded-br-lg  text-xl">
+            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
               <img className='mx-1' src={building} alt="" />
               المعادي
             </button>
-            <button className="bg-[#141414] hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border border-[#7F7F7F] rounded-tl-lg rounded-br-lg  text-xl">
+            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
               <img className='mx-1' src={building} alt="" />
               نزله السمان
             </button>
-            <button className="bg-[#141414] hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border border-[#7F7F7F] rounded-tl-lg rounded-br-lg  text-xl">
+            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
               <img className='mx-1' src={building} alt="" />
               نزله السمان
             </button>
@@ -336,7 +336,7 @@ function Home() {
               الموقع الاستراتيجي في منطقة البايدر الصناعية في عمان - الأردن ، بالقرب من طريق المطار الذي يربط الشمال والجنوب من المملكة. مع مساحة تزيد عن 2000 متر مربع ، وهو منشأة مزودة بأحدث التقنيات الحديثة لفحص المركبات ، و 10 رافعات لضمان الخدمة المثلى ، بسعة 25 مركبة. تم تصميم المرفق خصيصًا للتعامل مع جميع أنواع المركبات في نفس الوقت ، حيث يقوم الموظفون بإجراء عملية تفتيش يتم خلالها اتخاذ جميع تدابير مراقبة الجودة للحفاظ على أعلى مستوى من الدقة والدقة.
             </p>
             <div className=" flex justify-end  mt-10">
-              <button className="bg-[#ff8f4e] text-white py-4 px-8 rounded-lg font-bold text-lg">
+              <button className="mainBg text-white py-4 px-8 rounded-lg font-bold text-lg">
                 احجز خدمه للفحص الان
               </button>
             </div>
@@ -357,7 +357,7 @@ function Home() {
                 alt="Logo Icon"
               />
             </h2>
-            <button className='text-[#98989A] text-lg'>عرض الكل ...</button>
+            <button className='secondColor text-lg'>عرض الكل ...</button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -365,9 +365,9 @@ function Home() {
               <div>
                 <img className='w-full' src={article3} alt="" />
                 <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
-                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                <button className='text-white secondBg flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
                   <span>اقراء المزيد</span>
-                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                  <GoArrowUpRight className='mainColor' />
                 </button>
               </div>
             </div>
@@ -375,9 +375,9 @@ function Home() {
               <div>
                 <img className='w-full' src={article2} alt="" />
                 <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
-                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                <button className='text-white secondBg flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
                   <span>اقراء المزيد</span>
-                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                  <GoArrowUpRight className='mainColor' />
                 </button>
               </div>
             </div>
@@ -385,9 +385,9 @@ function Home() {
               <div>
                 <img className='w-full' src={article1} alt="" />
                 <h2 className='font-bold text-md my-3'>ازاي بيتم فحص السياره في مراكز خدمه كار سيرفيس </h2>
-                <button className='text-white bg-[#141414] flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
+                <button className='text-white secondBg flex items-center gap-2 py-3 px-4 rounded-lg w-full justify-center'>
                   <span>اقراء المزيد</span>
-                  <GoArrowUpRight className='text-[#ff8f4e]' />
+                  <GoArrowUpRight className='mainColor' />
                 </button>
               </div>
             </div>
@@ -411,21 +411,21 @@ function Home() {
         </div>
 
         <Slider {...settings2}>
-          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border border-[#7F7F7F] rounded-3xl ">
+          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border mainBorder rounded-3xl ">
             <p className='text-lg md:text-3xl font-semibold md:leading-relaxed '>ما شاء الله تبارك الله، خدمة الفحص عندكم أكثر من رائعة. السيارة تم فحصها بشكل دقيق جداً وكل صغيرة وكبيرة تم شرحها لي بالتفصيل. الصراحة ارتحت مرة بعد التقرير اللي استلمته، وحسيت إني فاهم حالة السيارة بالكامل قبل ما أشتريها. الله يبارك فيكم ويزيدكم من فضله</p>
             <div className=" flex items-center justify-end gap-4 mt-8 text-end">
               <img src={say2} alt="profile image" />
               <h2 className='text-base font-bold'>مصطفي الحسيني</h2>
             </div>
           </div>
-          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border border-[#7F7F7F] rounded-3xl ">
+          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border mainBorder rounded-3xl ">
             <p className='text-lg md:text-3xl font-semibold md:leading-relaxed '>ما شاء الله تبارك الله، خدمة الفحص عندكم أكثر من رائعة. السيارة تم فحصها بشكل دقيق جداً وكل صغيرة وكبيرة تم شرحها لي بالتفصيل. الصراحة ارتحت مرة بعد التقرير اللي استلمته، وحسيت إني فاهم حالة السيارة بالكامل قبل ما أشتريها. الله يبارك فيكم ويزيدكم من فضله</p>
             <div className=" flex items-center justify-end gap-4 mt-8 text-end">
               <img src={say2} alt="profile image" />
               <h2 className='text-base font-bold'>مصطفي الحسيني</h2>
             </div>
           </div>
-          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border border-[#7F7F7F] rounded-3xl ">
+          <div className=" w-4/5 text-end m-auto py-7 px-10 text-[#A4A4A4] border mainBorder rounded-3xl ">
             <p className='text-lg md:text-3xl font-semibold md:leading-relaxed '>ما شاء الله تبارك الله، خدمة الفحص عندكم أكثر من رائعة. السيارة تم فحصها بشكل دقيق جداً وكل صغيرة وكبيرة تم شرحها لي بالتفصيل. الصراحة ارتحت مرة بعد التقرير اللي استلمته، وحسيت إني فاهم حالة السيارة بالكامل قبل ما أشتريها. الله يبارك فيكم ويزيدكم من فضله</p>
             <div className=" flex items-center justify-end gap-4 mt-8 text-end">
               <img src={say2} alt="profile image" />
@@ -442,13 +442,13 @@ function Home() {
       {/* اشترك الان  */}
       <section className='w-10/12 mx-auto mb-10  py-10'>
         <div className="container  ">
-          <div className="grid grid-cols-1  md:grid-cols-2 gap-8  border border-[#7F7F7F] rounded-3xl p-4">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-8  border mainBorder rounded-3xl p-4">
             <div className="col-6 mb-8 mx-8">
               <h2 className='my-8 text-2xl md:text-5xl font-semibold max-w-sm leading-10'>اشترك الان في  القائمه البريديه</h2>
 
               <div className=" flex  justify-between p-2 border border-white rounded-xl">
                 <input className='px-1 w-1/3 text-white bg-transparent outline-none' type="text" placeholder="بريدك" />
-                <span className='flex items-center gap-2 bg-[#ff8f4e] rounded-xl py-3 px-4 cursor-pointer '>  <TbMessageHeart className='fs-3xl' />  اشترك الان </span>
+                <span className='flex items-center gap-2 mainBg rounded-xl py-3 px-4 cursor-pointer '>  <TbMessageHeart className='fs-3xl' />  اشترك الان </span>
               </div>
             </div>
             <div className="col-6 flex justify-center">

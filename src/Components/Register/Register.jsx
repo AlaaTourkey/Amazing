@@ -60,12 +60,12 @@ function Register() {
                 </span>
               </div>
               <button className="text-end mt-5 w-full">نسيت كلمه المرور</button>
-              <button className="block w-full bg-[#ff8f4e] py-4 px-4 rounded-lg my-10 font-bold">
+              <button className="block w-full mainBg py-4 px-4 rounded-lg my-10 font-bold">
                 انشاء حساب
               </button>
               <div className="flex items-center my-10">
                 <div className="flex-1 h-[1px] bg-gray-300"></div>
-                <h6 className="text-[##DFDFDF] px-4 text-md font-medium text-center">
+                <h6 className="secondColorpx-4 text-md font-medium text-center">
                   يمكنك التسجيل عبر
                 </h6>
                 <div className="flex-1 h-[1px] bg-gray-300"></div>
@@ -81,7 +81,7 @@ function Register() {
                   <FcGoogle className="text-3xl text-blue-600" />
                 </div>
               </div>
-              <h6 className="text-[##DFDFDF] mt-14 px-4 text-sm font-medium text-center">
+              <h6 className="secondColormt-14 px-4 text-sm font-medium text-center">
                 انشاء حساب
               </h6>
             </div>
