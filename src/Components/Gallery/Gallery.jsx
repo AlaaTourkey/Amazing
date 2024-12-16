@@ -47,7 +47,7 @@ function Gallery() {
           <div className="slider-container">
             <Slider {...settings}>
               {/* First Slide */}
-              <div class="grid grid-col-2   ">
+              <div className="grid grid-col-2   ">
                 <div className='flex items-center justify-center m-5'>
                   <img className='min-h-56 rounded-2xl' src={img1} alt="" />
                 </div>
@@ -56,7 +56,7 @@ function Gallery() {
                 </div>
               </div>
               {/* Second Slide */}
-              <div class="grid grid-col-2   ">
+              <div className="grid grid-col-2   ">
                 <div className='flex items-center justify-center m-5 '>
                   <img className='min-h-56 rounded-2xl' src={img2} alt="" />
                 </div>
@@ -65,7 +65,7 @@ function Gallery() {
                 </div>
               </div>
               {/* Third Slide */}
-              <div class="grid grid-col-2   ">
+              <div className="grid grid-col-2   ">
                 <div className='flex items-center justify-center m-5'>
                   <img className='min-h-56 rounded-2xl' src={img3} alt="" />
                 </div>

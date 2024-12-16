@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className='fixed bottom-0 left-0 w-full bg-black bg-opacity-80 z-40'>
+      <footer className=' w-full bg-black bg-opacity-80 z-40'>
         <div className="footer">
           <div className="grid grid-cols-1 sm:grid-cols-3 items-center justify-center py-5">
             <Link to="/">

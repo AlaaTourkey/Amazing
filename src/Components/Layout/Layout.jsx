@@ -2,15 +2,20 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import { Outlet } from 'react-router-dom'
 import Footer from '../Footer/Footer'
+import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton'
 
 function Layout() {
   return (
     <>
+    <header>
       <Navbar />
-      <div className="mb-20 mt-28">
+
+    </header>
+      <main className="mb-20 mt-28">
         <Outlet />
-      </div>
+      </main>
       <Footer />
+      <ScrollToTopButton/>
     </>
   )
 }

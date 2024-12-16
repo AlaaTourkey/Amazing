@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/auto-vehicle-repair-service-logo_681672-1437 1.png";
 
 function Navbar() {
@@ -19,27 +19,41 @@ function Navbar() {
 
         {/* Center Section: Navigation Links (hidden on small screens) */}
         <div className="hidden md:flex items-center gap-4 text-white">
-          <Link to="about" className="hover:text-orange-500">
+          <NavLink to="about" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             من نحن
-          </Link>
-          <Link to="/Questions" className="hover:text-orange-500">
+          </NavLink>
+          <NavLink to="/Questions" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             أسئلة و أجوبة
-          </Link>
-          <Link to="/articles" className="hover:text-orange-500">
+          </NavLink>
+          <NavLink to="/articles" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             مقالات
-          </Link>
-          <Link to="/contact" className="hover:text-orange-500">
+          </NavLink>
+          <NavLink to="/contact" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             اتصل بنا
-          </Link>
-          <Link to="/gallery" className="hover:text-orange-500">
+          </NavLink>
+          <NavLink to="/gallery" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             معرض الصور
-          </Link>
-          <Link to="/info" className="hover:text-orange-500">
+          </NavLink>
+          <NavLink to="/info" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             معلومات عنا
-          </Link>
-          <Link to="/report" className="hover:text-orange-500">
+          </NavLink>
+          <NavLink to="/report" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
             التقرير
-          </Link>
+          </NavLink>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
@@ -66,21 +80,41 @@ function Navbar() {
         className={`${isOpen ? "block" : "hidden"
           } md:hidden bg-black text-white flex flex-col items-center gap-4 mt-4 py-4 rounded-lg`}
       >
-        <Link to="about" className="hover:text-orange-500">
+        <NavLink to="about" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
           من نحن
-        </Link>
-        <Link to="/faq" className="hover:text-orange-500">
+        </NavLink>
+        <NavLink to="/faq" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
           أسئلة و أجوبة
-        </Link>
-        <Link to="/articles" className="hover:text-orange-500">
+        </NavLink>
+        <NavLink to="/articles" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
           مقالات
-        </Link>
-        <Link to="/contact" className="hover:text-orange-500">
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
           اتصل بنا
-        </Link>
-        <Link to="/gallery" className="hover:text-orange-500">
+        </NavLink>
+        <NavLink to="/gallery" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
           معرض الصور
-        </Link>
+        </NavLink>
+        <NavLink to="/info" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
+          معلومات عنا
+        </NavLink>
+        <NavLink to="/report" className={({ isActive }) =>
+            isActive ? "text-[#ff8f4e]" : "hover:text-orange-500"
+          }>
+          التقرير
+        </NavLink>
         <div className="flex flex-col gap-2 mt-4">
           <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300">
             <Link to="/login">تسجيل الدخول</Link>

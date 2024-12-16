@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import reportimg from '../../assets/reportimg.png'
 import reportimg1 from '../../assets/BMW.png'
 import reportimg2 from '../../assets/reportimg2.png'
@@ -17,8 +17,53 @@ import addition10 from '../../assets/addition10.png'
 import addition11 from '../../assets/addition11.png'
 import addition12 from '../../assets/addition12.png'
 import addition13 from '../../assets/addition13.png'
+import system1 from '../../assets/system1.png'
+import system2 from '../../assets/system2.png'
+import system3 from '../../assets/system3.png'
+import system4 from '../../assets/system4.png'
+import system5 from '../../assets/system5.png'
+import system6 from '../../assets/system6.png'
+import system7 from '../../assets/system7.png'
+import system8 from '../../assets/system8.png'
+import system9 from '../../assets/system9.png'
+import system10 from '../../assets/system10.png'
+import system11 from '../../assets/system11.png'
+import system12 from '../../assets/system12.png'
+import system13 from '../../assets/system13.png'
+import system14 from '../../assets/system14.png'
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri'
 
 function Report() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // list in last section
+  const [openIndex, setOpenIndex] = useState(null); // Track which list is open
+
+  const reports = [
+    { title: 'الهكيل الخارجي', image: system1, items: ['العنصر الأول', 'العنصر الثاني', 'العنصر الثالث'], },
+    { title: 'الشاسي والهكيل', image: system7, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'المحرك وناقل الحركة', image: system2, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'نظام التوجيه', image: system8, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'المجموعة الكهربائية', image: system3, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'نظام التكييف', image: system9, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'المكابح والسلامة', image: system4, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'التاريخ والسجلات', image: system10, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'فحص Bosch السلامة', image: system5, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'فحص الطريق', image: system11, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'صور الفحص', image: system6, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+    { title: 'جميع الملاحظات', image: system12, items: ['العنصر الرابع', 'العنصر الخامس', 'العنصر السادس'],},
+
+  ];
+
+  const toggleList = (index) => {
+    setOpenIndex(openIndex === index ? null : index); 
+  };
+
+
   return (
     <>
 
@@ -247,6 +292,158 @@ function Report() {
         </div>
       </section>
 
+      {/* أنظمة الفحص */}
+      <section className=" bg-black text-white  ">
+        <div className="container w-10/12 mx-auto px-7 ">
+          <h3 className="text-gray-400 mb-3 text-right">أنظمة الفحص</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            {/* right column */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system1} alt="Check" className="w-5 h-5" />
+                  <span>الهكيل الخارجي</span>
+                </div>
+                <img src={system13} alt="Exterior Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system2} alt="Check" className="w-5 h-5" />
+                  <span>المحرك وناقل الحركة</span>
+                </div>
+                <img src={system13} alt="Engine Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system3} alt="Check" className="w-5 h-5" />
+                  <span>المجموعة الكهربائية</span>
+                </div>
+                <img src={system13} alt="Electric Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system4} alt="Check" className="w-5 h-5" />
+                  <span>المكابح والسلامة</span>
+                </div>
+                <img src={system13} alt="Brake Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system5} alt="Bosch" className="w-5 h-5" />
+                  <span>فحص Bosch السلامة</span>
+                </div>
+                {/* <img src=" " alt="Bosch Icon" className="w-5 h-5" /> */}
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system6} alt="Photos Icon" className="w-5 h-5" />
+                  <span>صور الفحص</span>
+                </div>
+                <div>
+                  <span className="text-orange-400">19</span>
+                </div>
+              </div>
+
+            </div>
+            {/* left column */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system7} alt="Alert" className="w-5 h-5" />
+                  <span>الشاسي والهكيل</span>
+                </div>
+                <img src={system14} alt="Steering Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system8} alt="Check" className="w-5 h-5" />
+                  <span>نظام التوجيه</span>
+                </div>
+                <img src={system13} alt="Steering Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system9} alt="Check" className="w-5 h-5" />
+                  <span>نظام التكييف</span>
+                </div>
+                <img src={system13} alt="AC Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system10} alt="Check" className="w-5 h-5" />
+                  <span>التاريخ والسجلات</span>
+                </div>
+                {/* <img src="records_icon.png" alt="Records Icon" className="w-5 h-5" /> */}
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system11} alt="Check" className="w-5 h-5" />
+                  <span>فحص الطريق</span>
+                </div>
+                <img src={system13} alt="Road Icon" className="w-5 h-5" />
+              </div>
+
+              <div className="flex items-center justify-between border border-gray-600 p-2 rounded">
+                <div className="flex items-center gap-2">
+                  <img src={system12} alt="Check" className="w-5 h-5" />
+                  <span>جميع الملاحظات</span>
+                </div>
+                {/* <img src="notes_icon.png" alt="Notes Icon" className="w-5 h-5" /> */}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
+
+      <section className="bg-black w-10/12 mx-auto text-white">
+      <div className="container mx-auto my-10">
+        <div className="grid grid-rows-1 gap-4">
+          {reports.map((report, index) => (
+            <div key={index}>
+              {/* Main clickable div */}
+              <div
+                className="flex items-center justify-between border border-gray-600 p-3 rounded-lg cursor-pointer"
+                onClick={() => toggleList(index)}
+              >
+                <div className="flex items-center gap-2">
+                  {openIndex === index ? (
+                    <RiArrowUpSLine className="text-2xl text-gray-600" />
+                  ) : (
+                    <RiArrowDownSLine className="text-2xl text-gray-600" />
+                  )}
+                  <span>{report.title}</span>
+                </div>
+                {/* Dynamic image */}
+                <img src={report.image} alt="Report Icon" className="w-5 h-5" />
+              </div>
+
+              {/* List that appears when openIndex matches current index */}
+              {openIndex === index && (
+                <ul className="mt-2 bg-[#ff8f4e33] text-gray-200 border border-gray-400 rounded-lg p-3">
+                  {report.items.map((item, i) => (
+                    <li key={i} className="py-1">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
     </>
   )
 }
