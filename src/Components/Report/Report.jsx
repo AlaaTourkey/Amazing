@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import reportimg from '../../assets/reportimg.png'
-import reportimg1 from '../../assets/BMW.png'
-import reportimg2 from '../../assets/reportimg2.png'
-import reportimg3 from '../../assets/reportimg3.png'
-import reportimg4 from '../../assets/reportimg4.png'
+import reportimg1 from '../../assets/reportimg1.svg'
+import reportimg2 from '../../assets/reportimg2.svg'
+import reportimg3 from '../../assets/reportimg3.svg'
+import reportimg4 from '../../assets/reportimg4.svg'
 import addition1 from '../../assets/addition1.png'
 import addition2 from '../../assets/addition2.png'
 import addition3 from '../../assets/addition3.png'
@@ -70,73 +70,104 @@ function Report() {
       {/* الفحص الشامل */}
       <section>
         <div className="w-10/12 mx-auto my-10 py-10 ">
+
           <div className=" flex items-center justify-between p-3">
             <h5>الفحص الشامل</h5>
             <img src={reportimg} alt="" />
           </div>
           <div className=" flex items-center  p-3  gap-10 ">
             <h3>نوع السياره</h3>
-            <h4 className='flex items-center gap-3'>BMW ES300H 2016 <img src={reportimg1} alt="" /> </h4>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 text-white">
-            {/* First Section */}
-            <div className="flex items-center justify-around">
-              <div>
-                <h4 className="secondColor">رقم التقرير</h4>
-                <p className="font-bold">25082054</p>
-              </div>
-              <div>
-                <h4 className="secondColor">رقم الشاصي</h4>
-                <p className="font-bold">LexusEsDemoReport</p>
-              </div>
-            </div>
-
-            {/* Second Section */}
-            <div className="flex items-center justify-between px-5 py-3">
-              <div className="border-r-2 border-white px-5">
-                <h4 className="secondColor">النتيجة النهائية</h4>
-                <p className="mainColor font-bold">A+</p>
-              </div>
-              <div className="border-l-2 border-r-2 border-white px-5">
-                <h4 className="secondColor">المجموع</h4>
-                <p className="font-bold">82%</p>
-              </div>
-              <div className="border-l-2 border-white px-5">
-                <h4 className="secondColor">القيمة السوقية</h4>
-                <p className="font-bold">N/A</p>
-              </div>
-            </div>
-
-            {/* Third Section */}
-            <div className="flex justify-between items-center gap-5">
-              <img
-                src={reportimg2}
-                alt="Car 1"
-                className="rounded-lg w-full object-cover max-w-[100px] lg:max-w-[200px]"
-              />
-              <img
-                src={reportimg3}
-                alt="Car 2"
-                className="rounded-lg w-full object-cover max-w-[100px] lg:max-w-[200px]"
-              />
-              <img
-                src={reportimg4}
-                alt="Car 3"
-                className="rounded-lg w-full object-cover max-w-[100px] lg:max-w-[200px]"
-              />
-            </div>
           </div>
 
+
+          <div>
+            <div className="grid grid-cols-1  md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
+              {/* Car Type Image */}
+              <div className="col-span-1 md:col-span-1 border mainBorder rounded-lg flex justify-center items-center p-4">
+                <img
+                  src={reportimg1}
+                  className="w-1/2 lg:w-full object-cover"
+                  alt="Car Type Image"
+                />
+              </div>
+
+              {/* Report Details */}
+              <div className="col-span-1 sm:col-span-2 md:col-span-3 border mainBorder rounded-lg p-4">
+                <h4 className="flex items-center gap-3  text-lg font-bold mb-2">
+                  BMW ES300H 2016
+                </h4>
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-around gap-4">
+                  <div>
+                    <h4 className="text-gray-400">رقم التقرير</h4>
+                    <p className="font-bold ">25082054</p>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-400">رقم الشاصي</h4>
+                    <p className="font-bold ">LexusEsDemoReport</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Car Images */}
+              <div className="col-span-1 sm:col-span-2 md:col-span-2 flex items-center justify-center border mainBorder rounded-lg p-4">
+                <div className="grid grid-cols-3 gap-4 w-full">
+                  <div className="flex justify-center items-center">
+                    <img
+                      src={reportimg2}
+                      alt="Car 1"
+                      className="rounded-lg object-cover w-full"
+                    />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img
+                      src={reportimg3}
+                      alt="Car 2"
+                      className="rounded-lg object-cover w-full"
+                    />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img
+                      src={reportimg4}
+                      alt="Car 3"
+                      className="rounded-lg object-cover w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div className="grid grid-cols-1  md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 my-10">
+              <div className="col md:col-span-2 border mainBorder rounded-lg  p-4 ">
+                <div className=" px-5">
+                  <h4 className="secondColor">النتيجة النهائية</h4>
+                  <p className="mainColor font-bold">A+</p>
+                </div>
+              </div>
+              <div className="col md:col-span-2 border mainBorder rounded-lg  p-4">
+                <div className=" px-5">
+                  <h4 className="secondColor">المجموع</h4>
+                  <p className="font-bold">82%</p>
+                </div>
+              </div>
+              <div className="col md:col-span-2 border mainBorder rounded-lg  p-4">
+                <div className=" px-5">
+                  <h4 className="secondColor">القيمة السوقية</h4>
+                  <p className="font-bold">N/A</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
       {/*معلومات التقرير*/}
       <section>
-        <div className="container w-10/12 mx-auto my-3 py-4 ">
-          <h3 className='secondColor font-bold text-base' >معلومات التقرير</h3>
+        <div className="container w-10/12 mx-auto my-3 py-4">
+          <h3 className="secondColor font-bold text-base">معلومات التقرير</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
-            <div className="col ">
-              <table className="w-full border-collapse border border-gray-600 text-center my-8">
+            <div className="col">
+              <table className="w-full border-collapse text-center my-8">
                 <tbody>
                   <tr className="border-b border-gray-600">
                     <td className="p-3">التاريخ</td>
@@ -149,8 +180,8 @@ function Report() {
                 </tbody>
               </table>
             </div>
-            <div className="col ">
-              <table className="w-full border-collapse border border-gray-600 text-center my-8">
+            <div className="col">
+              <table className="w-full border-collapse text-center my-8">
                 <tbody>
                   <tr className="border-b border-gray-600">
                     <td className="p-3">رقم التقرير</td>
@@ -167,30 +198,30 @@ function Report() {
         </div>
       </section>
 
+
       {/*معلومات المركبة*/}
       <section>
-        <div className="container w-10/12 mx-auto my-3 py-4 ">
-          <h3 className='secondColor font-bold text-base' >معلومات المركبة</h3>
+        <div className="container w-10/12 mx-auto my-3 py-4">
+          <h3 className="secondColor font-bold text-base">معلومات المركبة</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
-            <div className="col ">
-              <table className="w-full border-collapse border border-gray-600 text-center my-8">
+            <div className="col">
+              <table className="w-full border-collapse text-center my-8">
                 <tbody>
-
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">النوع</td>
+                    <td className="p-3">النوع</td>
                     <td className="p-3 font-bold">Lexus</td>
                   </tr>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">سنة الصنع</td>
+                    <td className="p-3">سنة الصنع</td>
                     <td className="p-3 font-bold">2016</td>
                   </tr>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">العداد الحالي</td>
+                    <td className="p-3">العداد الحالي</td>
                     <td className="p-3 font-bold">105784 KM</td>
                   </tr>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">لون السيارة</td>
+                    <td className="p-3">لون السيارة</td>
                     <td className="p-3 flex items-center justify-center">
                       <div className="w-5 h-5 rounded-full bg-blue-500 border border-gray-200 mr-2"></div>
                       <span className="font-bold">أزرق</span>
@@ -199,26 +230,25 @@ function Report() {
                 </tbody>
               </table>
             </div>
-            <div className="col ">
-              <table className="w-full border-collapse border border-gray-600 text-center my-8">
-                <tbody>
 
+            <div className="col">
+              <table className="w-full border-collapse text-center my-8">
+                <tbody>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">الموديل</td>
+                    <td className="p-3">الموديل</td>
                     <td className="p-3 font-bold">ES300H</td>
                   </tr>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">سعة المحرك</td>
+                    <td className="p-3">سعة المحرك</td>
                     <td className="p-3 font-bold">2500</td>
                   </tr>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">رقم اللوحة</td>
+                    <td className="p-3">رقم اللوحة</td>
                     <td className="p-3 font-bold">000000</td>
                   </tr>
                   <tr className="border-b border-gray-600">
-                    <td className="p-3 ">نوع المحرك</td>
+                    <td className="p-3">نوع المحرك</td>
                     <td className="p-3 font-bold">Hybrid</td>
-
                   </tr>
                 </tbody>
               </table>
@@ -226,6 +256,7 @@ function Report() {
           </div>
         </div>
       </section>
+
 
       {/* الإضافات */}
       <section>
@@ -294,7 +325,7 @@ function Report() {
 
       {/* أنظمة الفحص */}
       <section className=" text-white  ">
-        <div className="container w-10/12 mx-auto px-7 ">
+        <div className="container w-10/12 mx-auto   ">
           <h3 className="text-gray-400 mb-3 text-right">أنظمة الفحص</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {/* right column */}
@@ -428,9 +459,8 @@ function Report() {
                   <img src={report.image} alt="Report Icon" className="w-12 h-12" />
                 </div>
 
-                {/* List that appears when openIndex matches current index */}
                 {openIndex === index && (
-                  <ul className="mt-2 bg-[#ff8f4e33] text-gray-200 border border-gray-400 rounded-lg p-3">
+                  <ul className="mt-2 bg-[#ff8f4e33] dark:text-gray-200 border border-gray-400 rounded-lg p-3">
                     {report.items.map((item, i) => (
                       <li key={i} className="py-1">
                         {item}

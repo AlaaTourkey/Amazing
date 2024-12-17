@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BiPlanet } from 'react-icons/bi';
 import { FaTwitter, FaYoutube } from 'react-icons/fa';
 import { IoLogoInstagram } from 'react-icons/io';
 import { Link } from "react-router-dom";
+import { DarkModeContext } from '../context/DarkModeContext';
 
 function Footer() {
+  const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
   return (
     <>
-      <footer className=' w-full bg-black bg-opacity-80 z-40'>
+      <footer className= {`w-full bg-opacity-80 z-40 shadow-2xl shadow-gray-700 ${isDarkMode ? 'bg-[#0f0f21ed]  text-white' : 'bg-white text-black'}`}>
         <div className="footer">
           <div className="grid grid-cols-1 sm:grid-cols-3 items-center justify-center py-5">
             <Link to="/">
@@ -18,7 +20,7 @@ function Footer() {
               </div>
             </Link>
             <div className="col-span-1 flex justify-center">
-              <div className=" flex items-center gap-5 text-white">
+              <div className=" flex items-center gap-5  ">
                 <Link to="about" className="hover:text-orange-500">
                   من نحن
                 </Link>

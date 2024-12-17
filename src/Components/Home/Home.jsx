@@ -37,10 +37,25 @@ import { TbMessageHeart } from 'react-icons/tb'
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // احجز خدمه الفحص دلوقتي
+  const settings = {
+    dots: true,  // To show the dots at the bottom
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <div className="custom-next-arrow">→</div>, // Custom next arrow
+    prevArrow: <div className="custom-prev-arrow">←</div>, // Custom prev arrow
+  };
+
+
+  // عملائنا قالو عننا ايه ؟
   var settings2 = {
     dots: true,
     infinite: true,
+    autoplay: true,
     speed: 500,
+    autoplaySpeed: 2000,
     dots: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -61,46 +76,108 @@ function Home() {
         </div>
       </section>
 
-      {/* info */}
+      {/* احجز خدمه الفحص دلوقتي */}
 
-      <section className="info  mt-10 py-10">
-        <div className="w-10/12 mx-auto bg-gray-200 rounded-lg shadow-md p-8 grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className="w-full ">
-            <label className="block text-gray-800 font-medium mb-2">الشركه المصنعه</label>
-            <input
-              type="text"
-              placeholder="الشركه المصنعه"
-              className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
-            />
-          </div>
+      <section className=" service mt-10 py-10">
+        <div className="w-10/12 mx-auto  border mainBorder rounded-3xl py-8 px-6">
+          <h2 className="text-4xl font-bold mb-2 text-center">
+            احجز خدمه الفحص دلوقتي
+          </h2>
+          <Slider {...settings} className="relative pt-3 pb-4">
+            <div dir="rtl">
+              <div className="grid grid-cols-1 md:grid-cols-7 gap-6 py-4">
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">الشركه المصنعه</label>
+                  <input
+                    type="text"
+                    placeholder="الشركه المصنعه"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">الموديل</label>
+                  <input
+                    type="text"
+                    placeholder="الموديل"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">السنه</label>
+                  <input
+                    type="text"
+                    placeholder="السنه"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                
+              </div>
+            </div>
+            <div dir="rtl">
+              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-6 py-4">
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">الشركه المصنعه</label>
+                  <input
+                    type="text"
+                    placeholder="الشركه المصنعه"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">الموديل</label>
+                  <input
+                    type="text"
+                    placeholder="الموديل"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">السنه</label>
+                  <input
+                    type="text"
+                    placeholder="السنه"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                
+              </div>
+            </div>
+            <div dir="rtl">
+              <div className="grid grid-cols-1 md:grid-cols-7 gap-6 py-4">
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">الشركه المصنعه</label>
+                  <input
+                    type="text"
+                    placeholder="الشركه المصنعه"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">الموديل</label>
+                  <input
+                    type="text"
+                    placeholder="الموديل"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="block secondColor mb-2">السنه</label>
+                  <input
+                    type="text"
+                    placeholder="السنه"
+                    className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  />
+                </div>
+                
+              </div>
+            </div>
 
-          <div className="w-full ">
-            <label className="block text-gray-800 font-medium mb-2">الموديل</label>
-            <input
-              type="text"
-              placeholder="الموديل"
-              className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
-            />
-          </div>
+            
+          </Slider>
 
-          <div className="w-full ">
-            <label className="block text-gray-800 font-medium mb-2">السنه</label>
-            <input
-              type="text"
-              placeholder="السنه"
-              className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
-            />
-          </div>
-
-          <div className=" flex items-end  mt-6">
-            <button className="bg-black text-white py-4 px-8 rounded-lg font-bold text-lg">
-              احجز خدمه للفحص الان
-            </button>
-          </div>
         </div>
-
-
       </section>
+
 
       {/* ليه تختار ؟ */}
 
@@ -189,7 +266,7 @@ function Home() {
             </div>
           </div>
           <div className='col-span-2 pt-16 spesial flex flex-col items-center rounded-b-3xl lg:rounded-l-3xl'>
-            <div className="px-10">
+            <div className="px-10 text-white">
               <h3 className='text-4xl font-bold '>إيه اللي بيميزنا عن غيرنا؟</h3>
               <h4 className='text-xl my-2'>مع كار سيرفيس، هتلاقي دايمًا قيمة مضافة
                 بتخليك في المقدمة</h4>
@@ -252,7 +329,7 @@ function Home() {
         <img className='absolute top-0 end-0   hidden md:block' src={bg3} alt="" />
         <div className="w-10/12 mx-auto">
           <div className="header text-center my-8 py-8 relative">
-            <h2 className="font-extrabold text-5xl text-white relative inline-block">
+            <h2 className="font-extrabold text-5xl   relative inline-block">
               ارقــامــنــا
               <img
                 className="absolute -top-14 left-[-6%] transform -translate-x-1/2  "
@@ -261,33 +338,33 @@ function Home() {
               />
             </h2>
           </div>
-          <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
+          <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-white">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder shadow-lg shadow-gray-500 rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto6} alt="" />
               <h2 className='font-bold text-2xl'>10,000+</h2>
               <p className='my-3'>عميل راضٍ عن خدمتنا</p>
             </div>
-            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder shadow-lg shadow-gray-500 rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto5} alt="" />
               <h2 className='font-bold text-2xl'>+5,000</h2>
               <p className='my-3'>تقرير تحليل دقيق </p>
             </div>
-            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder shadow-lg shadow-gray-500 rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto4} alt="" />
               <h2 className='font-bold text-2xl'>+500</h2>
               <p className='my-3'>تقييم إيجابي من عملائنا</p>
             </div>
-            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder shadow-lg shadow-gray-500 rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto3} alt="" />
               <h2 className='font-bold text-2xl'>24/7</h2>
               <p className='my-3'>دعم متواصل</p>
             </div>
-            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder shadow-lg shadow-gray-500 rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto2} alt="" />
               <h2 className='font-bold text-2xl'>95%</h2>
               <p className='my-3'>نسبة رضا العملاء</p>
             </div>
-            <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
+            <div className="secondBg flex flex-col items-center text-center border mainBorder shadow-lg shadow-gray-500 rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto1} alt="" />
               <h2 className='font-bold text-2xl'>+1,000</h2>
               <p className='my-3'>سيارة تم فحصها</p>
@@ -303,7 +380,7 @@ function Home() {
 
       <section className='w-10/12 mx-auto my-10  py-10'>
         <div className="header text-center my-8 py-8 ">
-          <h2 className="font-extrabold text-5xl text-white  inline-block">
+          <h2 className="font-extrabold text-5xl  inline-block">
             فروع كار سيرفيس
           </h2>
         </div>
@@ -349,7 +426,7 @@ function Home() {
       <section className="w-10/12 mx-auto my-10  py-10">
         <div >
           <div className="header my-8 py-8 flex justify-between px-4">
-            <h2 className="font-bold text-3xl md:text-5xl text-white inline-block relative">
+            <h2 className="font-bold text-3xl md:text-5xl inline-block relative">
               المقالات
               <img
                 className="absolute -top-4 left-[-13%] transform -translate-x-1/2  "
@@ -400,7 +477,7 @@ function Home() {
 
       <section className='say w-10/12 mx-auto my-16  py-10 relative'>
         <div className="header my-8 py-8 flex justify-between px-4">
-          <h2 className="font-bold text-3xl md:text-5xl text-white inline-block relative">
+          <h2 className="font-bold text-3xl md:text-5xl inline-block relative">
             عملائنا قالو عننا ايه ؟
             <img
               className="absolute -top-7 left-[-3%] transform -translate-x-1/2  "
@@ -446,7 +523,7 @@ function Home() {
             <div className="col-6 mb-8 mx-8">
               <h2 className='my-8 text-2xl md:text-5xl font-semibold max-w-sm leading-10'>اشترك الان في  القائمه البريديه</h2>
 
-              <div className=" flex  justify-between p-2 border border-white rounded-xl">
+              <div className=" flex  justify-between p-2 border mainBorder rounded-xl">
                 <input className='px-1 w-1/3 text-white bg-transparent outline-none' type="text" placeholder="بريدك" />
                 <span className='flex items-center gap-2 mainBg rounded-xl py-3 px-4 cursor-pointer '>  <TbMessageHeart className='fs-3xl' />  اشترك الان </span>
               </div>
