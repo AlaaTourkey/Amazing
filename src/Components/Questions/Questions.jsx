@@ -21,7 +21,7 @@ function Questions() {
 
   return (
     <>
-      <section className="bg-black text-white py-10">
+      <section className="  py-10">
         <div className="container mx-auto text-center relative mb-16">
           <h3 className="text-5xl my-5">الأسئلة الشائعة في</h3>
           <h2 className="text-5xl font-extrabold">كار سيرفس</h2>
@@ -35,27 +35,33 @@ function Questions() {
         <div className="container mx-auto px-4 md:w-3/4">
           {faqs.map((item, index) => (
             <div key={index} className="mb-3">
-              {/* Question */}
-              <div
-                className={`flex justify-between items-center p-4 cursor-pointer ${activeIndex === index ? 'bg-[#ff8f4e33]' : 'bg-[#1A1A1A]'
-                  }`}
-                onClick={() => toggleFAQ(index)}
-              >
-                <h3 className="text-lg md:text-xl">{item.question}</h3>
-                {activeIndex === index ? (
-                  <IoMdArrowDropup className="text-orange-500 text-2xl" />
-                ) : (
-                  <IoMdArrowDropdown  className="text-gray-400 text-2xl" />
-                )}
-              </div>
-
-              {/* Answer */}
-              {activeIndex === index && (
-                <div className="p-4 bg-[#ff8f4e33] text-gray-200">
-                  <p>{item.answer}</p>
-                </div>
+            {/* Question */}
+            <div
+              className={`flex justify-between items-center p-4 cursor-pointer transition-all duration-200 
+                ${activeIndex === index 
+                  ? 'bg-orange-100 dark:bg-[#ff8f4e33]' 
+                  : 'bg-gray-100 dark:bg-[#141414]'
+                }`}
+              onClick={() => toggleFAQ(index)}
+            >
+              <h3 className="text-lg md:text-xl text-black dark:text-white">
+                {item.question}
+              </h3>
+              {activeIndex === index ? (
+                <IoMdArrowDropup className="text-orange-500 text-2xl" />
+              ) : (
+                <IoMdArrowDropdown className="text-gray-500 dark:text-gray-400 text-2xl" />
               )}
             </div>
+          
+            {/* Answer */}
+            {activeIndex === index && (
+              <div className="p-4 bg-orange-100 dark:bg-[#ff8f4e33] text-black dark:text-white">
+                <p>{item.answer}</p>
+              </div>
+            )}
+          </div>
+          
           ))}
         </div>
       </section>

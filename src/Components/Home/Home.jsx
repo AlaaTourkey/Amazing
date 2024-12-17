@@ -79,7 +79,7 @@ function Home() {
       {/* احجز خدمه الفحص دلوقتي */}
 
       <section className=" service mt-10 py-10">
-        <div className="w-10/12 mx-auto  border mainBorder rounded-3xl py-8 px-6">
+        <div className="w-10/12 mx-auto  border mainBorder rounded-3xl py-12 px-6">
           <h2 className="text-4xl font-bold mb-2 text-center">
             احجز خدمه الفحص دلوقتي
           </h2>
@@ -110,7 +110,7 @@ function Home() {
                     className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                   />
                 </div>
-                
+
               </div>
             </div>
             <div dir="rtl">
@@ -139,7 +139,7 @@ function Home() {
                     className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                   />
                 </div>
-                
+
               </div>
             </div>
             <div dir="rtl">
@@ -168,11 +168,11 @@ function Home() {
                     className="w-full py-4 px-5 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                   />
                 </div>
-                
+
               </div>
             </div>
 
-            
+
           </Slider>
 
         </div>
@@ -386,25 +386,33 @@ function Home() {
         </div>
 
         <div className="grid grid-cols-1  lg:grid-cols-9 gap-4">
-          <div className="col-span-2 flex flex-col items-center gap-8">
-            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
-              <img className='mx-1' src={building} alt="" />
-              المقطم
-            </button>
-            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
-              <img className='mx-1' src={building} alt="" />
-              المعادي
-            </button>
-            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
-              <img className='mx-1' src={building} alt="" />
-              نزله السمان
-            </button>
-            <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
-              <img className='mx-1' src={building} alt="" />
-              نزله السمان
-            </button>
-
+          <div className="col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-6 justify-center">
+            <div className="flex justify-center items-center">
+              <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
+                <img className="mx-1" src={building} alt="" />
+                المقطم
+              </button>
+            </div>
+            <div className="flex justify-center items-center">
+              <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
+                <img className="mx-1" src={building} alt="" />
+                المعادي
+              </button>
+            </div>
+            <div className="flex justify-center items-center">
+              <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
+                <img className="mx-1" src={building} alt="" />
+                نزله السمان
+              </button>
+            </div>
+            <div className="flex justify-center items-center">
+              <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
+                <img className="mx-1" src={building} alt="" />
+                نزله السمان
+              </button>
+            </div>
           </div>
+
           <div className="col-span-4 ">
             <img className='w-full h-full' src={rectangle} alt="" />
           </div>

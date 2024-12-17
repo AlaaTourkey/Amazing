@@ -51,9 +51,9 @@ function About() {
       {/* ارقــامــنــا */}
       <section className=' my-10  py-10 relative '>
         <img className='absolute top-0 end-0   hidden md:block' src={bg3} alt="" />
-        <div className="w-10/12 mx-auto">
+        <div className="w-10/12 mx-auto ">
           <div className="header text-center my-8 py-8 relative">
-            <h2 className="font-extrabold text-5xl text-white relative inline-block">
+            <h2 className="font-extrabold text-5xl   relative inline-block">
               ارقــامــنــا
               <img
                 className="absolute -top-14 left-[-6%] transform -translate-x-1/2  "
@@ -62,7 +62,7 @@ function About() {
               />
             </h2>
           </div>
-          <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-white">
             <div className="secondBg flex flex-col items-center text-center border mainBorder rounded-tl-lg rounded-br-lg py-4 ">
               <img className='w-1/3 my-4' src={numPhoto6} alt="" />
               <h2 className='font-bold text-2xl'>10,000+</h2>
@@ -104,7 +104,7 @@ function About() {
       {/* ماذا نقدم؟ */}
       <section className="w-11/12 mx-auto px-14 my-16  items-center">
         <div className="header text-center my-8 py-8 ">
-          <h2 className="font-extrabold text-5xl text-white ">
+          <h2 className="font-extrabold text-5xl  ">
             ماذا نقدم؟
           </h2>
         </div>
@@ -146,10 +146,9 @@ function About() {
           </div>
           <div className="relative">
             <img src={aboutImg} alt="about car" className="w-full h-full object-contain" />
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full border-l-2 border-white"></div>
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full border-l-2 mainBorder"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
               <div className="bg-orange-500 text-white w-11 h-11 flex items-center justify-center rounded-full shadow-lg">
-                <span className="text-2xl font-bold"> </span>
                 <img src={switchIcon} alt="" />
               </div>
             </div>

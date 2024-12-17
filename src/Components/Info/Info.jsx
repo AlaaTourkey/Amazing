@@ -25,7 +25,7 @@ function Info() {
 
       <section>
         <div className="container w-10/12 mx-auto my-2 py-2">
-          <div className="text-xl text-[#E0E0E0] leading-10 px-5">
+          <div className="text-xl   dark:text-[#E0E0E0] leading-10 px-5">
             {/* article one */}
             <p>السيارات أصبحت جزءًا لا يتجزأ من حياتنا اليومية، فهي ليست مجرد وسيلة نقل بل تعكس التكنولوجيا الحديثة وتقدم الصناعة. تطورت السيارات بشكل هائل منذ اختراعها في أواخر القرن التاسع عشر وحتى يومنا هذا، حيث أصبحت تجمع بين الراحة، الأمان، والكفاءة.
             </p>
@@ -65,7 +65,7 @@ function Info() {
       <section className="w-10/12 mx-auto my-10  py-10">
         <div >
           <div className="header my-8 py-8 flex justify-between px-4">
-            <h2 className="font-semibold text-3xl text-white inline-block relative">
+            <h2 className="font-semibold text-3xl   inline-block relative">
             مقالات متشابهه
             </h2>
           </div>
