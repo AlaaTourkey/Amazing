@@ -39,13 +39,13 @@ function Home() {
 
   // احجز خدمه الفحص دلوقتي
   const settings = {
-    dots: true,  // To show the dots at the bottom
+    dots: true, 
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <div className="custom-next-arrow">→</div>, // Custom next arrow
-    prevArrow: <div className="custom-prev-arrow">←</div>, // Custom prev arrow
+    nextArrow: <div className="custom-next-arrow">→</div>, 
+    prevArrow: <div className="custom-prev-arrow">←</div>, 
   };
 
 
@@ -484,7 +484,7 @@ function Home() {
       {/* عملائنا قالو عننا ايه ؟ */}
 
       <section className='say w-10/12 mx-auto my-16  py-10 relative'>
-        <div className="header my-8 py-8 flex justify-between px-4">
+        <div className="header my-9 py-8 flex justify-between px-4">
           <h2 className="font-bold text-3xl md:text-5xl inline-block relative">
             عملائنا قالو عننا ايه ؟
             <img

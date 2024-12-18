@@ -109,7 +109,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.service .slick-prev:hover{
+.service .slick-prev:hover {
   background-color: var(--mainColor);
 }
 
@@ -195,10 +195,23 @@ body {
   .home {
     height: 40dvh !important;
   }
+  
 }
 
 @media (min-width: 640px) {
   .home {
     height: 90dvh !important;
   }
+  
 }
+@media (max-width: 768px) {
+  .say .slick-prev,
+  .say .slick-next {
+    top: -10% !important;
+  }
+  .say .slick-next {
+    right: 73% !important;
+}
+}
+  
+
