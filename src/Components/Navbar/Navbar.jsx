@@ -12,26 +12,23 @@ function Navbar() {
   const handleCloseMenu = () => setIsOpen(false);
 
   return (
-    <div className={`nav w-full mx-auto my-3 fixed top-0 left-0 right-0 z-50`}>
+    <div className={`nav w-10/12 mx-auto my-3 fixed top-0 left-0 right-0 z-50`}>
       <div
-        className={`flex justify-between items-center gap-2 px-5 py-3 border mainBorder rounded-full ${isDarkMode ? "bg-[#0f0f21ed]  text-white" : "bg-white text-black"}`}
+        className={`flex justify-between items-center gap-2 px-7 py-3 border mainBorder rounded-full ${
+          isDarkMode ? "bg-[#0f0f21ed]  text-white" : "bg-white text-black"
+        }`}
       >
         <div className="flex items-center justify-between px-2">
-          <Link to="/" className="flex items-center gap-2" onClick={handleCloseMenu}>
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={handleCloseMenu}
+          >
             <img className="w-10 h-10" src={logo} alt="logo" />
             <h2 className="lg:text-2xl mx-2">
               <strong>كـــــار</strong> سيرفيس
             </h2>
           </Link>
-
-          {/* Dark Mode Toggle */}
-          <DarkModeSwitch
-            checked={isDarkMode}
-            onChange={toggleDarkMode}
-            size={24}
-            moonColor="white"
-            sunColor="black"
-          />
         </div>
 
         <div className="hidden md:flex items-center gap-3 text-center">
@@ -85,7 +82,15 @@ function Navbar() {
           </NavLink>
         </div>
 
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-3">
+          {/* Dark Mode Toggle */}
+          <DarkModeSwitch
+            checked={isDarkMode}
+            onChange={toggleDarkMode}
+            size={24}
+            moonColor="white"
+            sunColor="black"
+          />
           <button className="border-2 border-orange-500 px-2 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300">
             <Link to="/register">إنشاء حساب</Link>
           </button>
@@ -94,18 +99,32 @@ function Navbar() {
           </button>
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+          {/* Dark Mode Toggle */}
+          <DarkModeSwitch
+            checked={isDarkMode}
+            onChange={toggleDarkMode}
+            size={24}
+            moonColor="white"
+            sunColor="black"
+          />
+
+          {/* Mobile Menu Toggle */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-black dark:text-white focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)} // Only toggle the mobile menu
+            className="text-black dark:text-white focus:outline-none flex items-center gap-2"
           >
-            ☰
+            <span className="text-xl">☰</span>
           </button>
         </div>
       </div>
 
       {/* Dropdown Menu for Small Screens */}
-      <div className={`${isOpen ? "block" : "hidden"} ${isDarkMode ? "bg-[#0f0f21ed]  text-white" : "bg-white text-black"} md:hidden  flex flex-col items-center gap-4 py-10 rounded-lg relative`}>
+      <div
+        className={`${isOpen ? "block" : "hidden"} ${
+          isDarkMode ? "bg-[#0f0f21ed]  text-white" : "bg-white text-black"
+        } md:hidden  flex flex-col items-center gap-4 py-10 rounded-lg relative`}
+      >
         <button
           onClick={handleCloseMenu}
           className="absolute top-4 right-6 text-white text-2xl focus:outline-none"
@@ -168,10 +187,16 @@ function Navbar() {
           التقرير
         </NavLink>
         <div className="flex flex-col gap-2 mt-4">
-          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300" onClick={handleCloseMenu}>
+          <button
+            className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300"
+            onClick={handleCloseMenu}
+          >
             <Link to="/login">تسجيل الدخول</Link>
           </button>
-          <button className="border-2 border-orange-500 text-orange-500 px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300" onClick={handleCloseMenu}>
+          <button
+            className="border-2 border-orange-500 text-orange-500 px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300"
+            onClick={handleCloseMenu}
+          >
             <Link to="/register">إنشاء حساب</Link>
           </button>
         </div>

@@ -136,7 +136,10 @@ body {
 }
 
 .say .slick-next {
-  right: 89% !important;
+  left: 105px !important;
+}
+.slick-prev {
+  left: 30px !important;
 }
 
 .say .slick-prev:before,
@@ -195,23 +198,22 @@ body {
   .home {
     height: 40dvh !important;
   }
-  
 }
 
 @media (min-width: 640px) {
   .home {
     height: 90dvh !important;
   }
-  
 }
 @media (max-width: 768px) {
   .say .slick-prev,
   .say .slick-next {
-    top: -10% !important;
+    top: 113% !important;
   }
   .say .slick-next {
-    right: 73% !important;
+    left: 105px !important;
+  }
+  .slick-prev {
+    left: 30px !important;
+  }
 }
-}
-  
-

@@ -31,6 +31,7 @@ import article3 from '../../assets/article3.png'
 import say from '../../assets/say.png'
 import say2 from '../../assets/say2.png'
 import car from '../../assets/car.png'
+import vector from '../../assets/Vector 196 (Stroke).png'
 import { GoArrowUpRight } from 'react-icons/go'
 import Slider from 'react-slick/lib/slider'
 import { TbMessageHeart } from 'react-icons/tb'
@@ -80,7 +81,7 @@ function Home() {
 
       <section className=" service mt-10 py-10">
         <div className="w-10/12 mx-auto  border mainBorder rounded-3xl py-12 px-6">
-          <h2 className="text-4xl font-bold mb-2 text-center">
+          <h2 className="text-xl md:text-4xl font-bold mb-2 text-center">
             احجز خدمه الفحص دلوقتي
           </h2>
           <Slider {...settings} className="relative pt-3 pb-4">
@@ -188,8 +189,8 @@ function Home() {
         <div className=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 mainBorder rounded-3xl">
           <div className='col-span-2 pt-20 choose flex flex-col items-center rounded-t-3xl lg:rounded-r-3xl'>
             <div className="">
-              <h3 className='text-6xl font-bold '>ليه تختار ؟</h3>
-              <h4 className='text-4xl my-4'>كـــــــار ســيــرفــس</h4>
+              <h3 className='text-4xl md:text-6xl font-bold '>ليه تختار ؟</h3>
+              <h4 className='text-2xl md:text-4xl my-4'>كـــــــار ســيــرفــس</h4>
             </div>
             <img className='w-1/2 mt-5' src={carimg} alt=" car photo" />
           </div>
@@ -198,8 +199,8 @@ function Home() {
               <div className=" p-4  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg1} alt="Feature Icon" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-2">تقارير دقيقة وشاملة</h2>
-                  <p className="text-white text-sm max-w-lg  ">
+                  <h2 className="  text-lg  md:text-2xl font-bold text-white mb-2">تقارير دقيقة وشاملة</h2>
+                  <p className="text-white text-xs md:text-sm max-w-lg  ">
                     كل التفاصيل اللي محتاجها في مكان واحد، بناءً على بيانات موثوقة وتحليلات ذكية
                   </p>
                 </div>
@@ -207,8 +208,8 @@ function Home() {
               <div className=" p-4  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg2} alt="Feature Icon" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-2">سهولة في الاستخدام</h2>
-                  <p className="text-white text-sm max-w-md ">
+                  <h2 className="  text-lg  md:text-2xl font-bold text-white mb-2">سهولة في الاستخدام</h2>
+                  <p className="text-white text-xs md:text-sm max-w-md ">
                     واجهة بسيطة وسريعة تضمن تجربة استخدام مريحة
                   </p>
                 </div>
@@ -216,8 +217,8 @@ function Home() {
               <div className=" p-4  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg3} alt="Feature Icon" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-2">أمان البيانات</h2>
-                  <p className="text-white text-sm max-w-md ">
+                  <h2 className="  text-lg  md:text-2xl font-bold text-white mb-2">أمان البيانات</h2>
+                  <p className="text-white text-xs md:text-sm max-w-md ">
                     خصوصيتك أولويتنا، كل معلوماتك في أيدٍ أمينة
                   </p>
                 </div>
@@ -230,7 +231,7 @@ function Home() {
 
       {/* إيه اللي بيميزنا عن غيرنا؟ */}
 
-      <section className="my-16 pt-5 relative">
+      <section className="my-12 pt-5 relative">
         <img className='absolute top-1/2 end-0 -translate-y-1/2 hidden md:block ' src={bg2} alt="" />
 
         <div class=" w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5 border-2 mainBorder rounded-3xl">
@@ -239,7 +240,7 @@ function Home() {
               <div className=" p-2  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg4} alt="Feature Icon" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-2">تحليلات متطورة</h2>
+                  <h2 className="text-lg  md:text-2xl font-bold text-white mb-2">تحليلات متطورة</h2>
                   <p className="text-white  max-w-lg  ">
                     نعتمد على أحدث تقنيات الذكاء الاصطناعي لتقديم رؤية واضحة ودقيقة
                   </p>
@@ -248,7 +249,7 @@ function Home() {
               <div className=" p-2  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg5} alt="Feature Icon" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-2">تحديثات مستمرة</h2>
+                  <h2 className="text-lg  md:text-2xl font-bold text-white mb-2">تحديثات مستمرة</h2>
                   <p className="text-white  max-w-lg ">
                     تطوّر مستمر في خدماتنا عشان نضمن أفضل تجربة ليك
                   </p>
@@ -257,7 +258,7 @@ function Home() {
               <div className=" p-2  flex items-center gap-4">
                 <img className="w-12 h-12 object-cover rounded-full" src={chooseImg6} alt="Feature Icon" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-2">دعم على مدار الساعة</h2>
+                  <h2 className="text-lg  md:text-2xl font-bold text-white mb-2">دعم على مدار الساعة</h2>
                   <p className="text-white  max-w-lg ">
                     فريقنا موجود دائمًا للإجابة على كل استفساراتك
                   </p>
@@ -325,14 +326,14 @@ function Home() {
 
       {/* ارقــامــنــا */}
 
-      <section className=' my-10  py-10 relative '>
+      <section className=' my-5  py-5 relative '>
         <img className='absolute top-0 end-0   hidden md:block' src={bg3} alt="" />
         <div className="w-10/12 mx-auto">
-          <div className="header text-center my-8 py-8 relative">
-            <h2 className="font-extrabold text-5xl   relative inline-block">
+          <div className="header text-center my-4 py-4 md:my-8 md:py-8 relative">
+            <h2 className="font-extrabold text-xl md:text-5xl   relative inline-block">
               ارقــامــنــا
               <img
-                className="absolute -top-14 left-[-6%] transform -translate-x-1/2  "
+                className="absolute -top-14 left-[-6%] transform -translate-x-1/2 hidden md:block "
                 src={numPhoto}
                 alt="Logo Icon"
               />
@@ -378,16 +379,17 @@ function Home() {
 
       {/* فروع كار سيرفيس */}
 
-      <section className='w-10/12 mx-auto my-10  py-10'>
-        <div className="header text-center my-8 py-8 ">
-          <h2 className="font-extrabold text-5xl  inline-block">
+      <section className='w-10/12 mx-auto my-5  py-5'>
+        <div className="header text-center my-4 py-4 md:my-8 md:py-8   relative">
+          <h2 className="font-extrabold text-xl md:text-5xl  inline-block">
             فروع كار سيرفيس
           </h2>
+          <img className='absolute right-1/2 translate-x-1/2 hidden md:block ' src={vector} alt="" />
         </div>
 
-        <div className="grid grid-cols-1  lg:grid-cols-9 gap-4">
-          <div className="col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-6 justify-center">
-            <div className="flex justify-center items-center">
+        <div className="grid grid-cols-1  lg:grid-cols-9 gap-3  md:gap-4">
+          <div className="col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-11 md:gap-6  justify-center">
+            <div className="flex justify-center items-center gap-2">
               <button className="secondBg hover:bg-[#ff8f4e] transition-all min-w-40 duration-150 flex  text-white py-4 px-3 border mainBorder rounded-tl-lg rounded-br-lg  text-xl">
                 <img className="mx-1" src={building} alt="" />
                 المقطم
@@ -420,7 +422,7 @@ function Home() {
             <p className='leading-8'>
               الموقع الاستراتيجي في منطقة البايدر الصناعية في عمان - الأردن ، بالقرب من طريق المطار الذي يربط الشمال والجنوب من المملكة. مع مساحة تزيد عن 2000 متر مربع ، وهو منشأة مزودة بأحدث التقنيات الحديثة لفحص المركبات ، و 10 رافعات لضمان الخدمة المثلى ، بسعة 25 مركبة. تم تصميم المرفق خصيصًا للتعامل مع جميع أنواع المركبات في نفس الوقت ، حيث يقوم الموظفون بإجراء عملية تفتيش يتم خلالها اتخاذ جميع تدابير مراقبة الجودة للحفاظ على أعلى مستوى من الدقة والدقة.
             </p>
-            <div className=" flex justify-end  mt-10">
+            <div className=" flex justify-center  mt-10">
               <button className="mainBg text-white py-4 px-8 rounded-lg font-bold text-lg">
                 احجز خدمه للفحص الان
               </button>
@@ -431,13 +433,13 @@ function Home() {
 
       {/* المقالات */}
 
-      <section className="w-10/12 mx-auto my-10  py-10">
+      <section className="w-10/12 mx-auto my-2 py-2 md:py-10">
         <div >
           <div className="header my-8 py-8 flex justify-between px-4">
-            <h2 className="font-bold text-3xl md:text-5xl inline-block relative">
+            <h2 className="font-bold text-xl md:text-5xl inline-block relative">
               المقالات
               <img
-                className="absolute -top-4 left-[-13%] transform -translate-x-1/2  "
+                className="absolute -top-4 left-[-13%] transform -translate-x-1/2 hidden md:block  "
                 src={article}
                 alt="Logo Icon"
               />
@@ -483,12 +485,12 @@ function Home() {
 
       {/* عملائنا قالو عننا ايه ؟ */}
 
-      <section className='say w-10/12 mx-auto my-16  py-10 relative'>
-        <div className="header my-9 py-8 flex justify-between px-4">
-          <h2 className="font-bold text-3xl md:text-5xl inline-block relative">
+      <section className='say w-10/12 mx-auto mb-11  pb-8 relative'>
+        <div className="header my-3 py-6 flex justify-between px-4">
+          <h2 className="font-bold text-xl md:text-5xl inline-block relative">
             عملائنا قالو عننا ايه ؟
             <img
-              className="absolute -top-7 left-[-3%] transform -translate-x-1/2  "
+              className="absolute -top-7 left-[-3%] transform -translate-x-1/2  hidden md:block"
               src={say}
               alt="Logo Icon"
             />
@@ -528,16 +530,16 @@ function Home() {
       <section className='w-10/12 mx-auto mb-10  py-10'>
         <div className="container  ">
           <div className="grid grid-cols-1  md:grid-cols-2 gap-8  border mainBorder rounded-3xl p-4">
-            <div className="col-6 mb-8 mx-8">
-              <h2 className='my-8 text-2xl md:text-5xl font-semibold max-w-sm leading-10'>اشترك الان في  القائمه البريديه</h2>
+            <div className="col-6 mb-8 mx-4">
+              <h2 className='my-8 text-md md:text-5xl font-semibold max-w-sm leading-10'>اشترك الان في  القائمه البريديه</h2>
 
-              <div className=" flex  justify-between p-2 border mainBorder rounded-xl">
+              <div className=" flex  justify-between px-2 py-1 border mainBorder rounded-xl">
                 <input className='px-1 w-1/3 text-white bg-transparent outline-none' type="text" placeholder="بريدك" />
-                <span className='flex items-center gap-2 mainBg rounded-xl py-3 px-4 cursor-pointer '>  <TbMessageHeart className='fs-3xl' />  اشترك الان </span>
+                <span className='flex items-center gap-2 mainBg rounded-xl py-2 px-4 cursor-pointer text-sm  '>  <TbMessageHeart className='fs-3xl' />  اشترك الان </span>
               </div>
             </div>
             <div className="col-6 flex justify-center">
-              <img src={car} alt="" className='w-full object-contain -mt-16' />
+              <img src={car} alt="" className='w-full object-contain md:-mt-16' />
             </div>
           </div>
         </div>
